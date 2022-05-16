@@ -1,34 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
- 
-    <title></title>
-</head>
-<body>
-    <script>
-    var year = prompt("please input a year to find out the next 20 years");
-    var counter = 20;
-    var result=true;
-    
-    function leapyear(year, counter, result)
-     {
-        while (counter >= 0) {
-    
-            if ((year % 4 === 0) && (year % 100 !== 0)||(year % 400 === 0))
-            {
-                result = true;
-                console.log(year);
-                year++;
-                counter--;
-            } 
-            else 
-            {
-                year++;
-            }    
-        }
-    }
-    </script>
-    
-</script>
-</body>
-</html>
+function leapYears() {
+while (yearsPrinted < 5)
+{ 
+	if ((currentYear % 4 === 0))
+	{
+		document.write(currentYear);
+		yearsPrinted++;
+		currentYear++;
+	}
+	else
+ 	{
+		currentYear++;
+	}
+}
+}
