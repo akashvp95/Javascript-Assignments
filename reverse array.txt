@@ -1,0 +1,2 @@
+const numstring = [10, "cap", 13, "gemini"];
+console.log(numstring.reverse());
