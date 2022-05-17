@@ -1,3 +1,4 @@
+1.
 const compose = (...fns) => x => fns.reduceRight((y, f) => f(y), x); 
 const double = x => x * 2
 const square = x => x * x
@@ -5,3 +6,12 @@ const square = x => x * x
 // function composition
 var output_final = compose((square, double)(5));
 console.log(output_final);
+
+--------------------------------------------------------------------------
+3.
+const isEven = x => x%2 == 0
+const find = x => isEven(x[0])
+var output = find([10,6], isEven)
+
+console.log("checking isEven",output)
+
